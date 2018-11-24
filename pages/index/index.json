@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "饱了么"
+  "navigationBarTitleText": "饱了么",
+  "usingComponents":{
+    "Star": "../../components/star/star"
+  }
 }

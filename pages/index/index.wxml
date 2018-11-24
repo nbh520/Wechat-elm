@@ -1,3 +1,54 @@
 <!--index.wxml-->
+<view class='header'>
+  <view class='address-weather'>
+    <view class='address'>{{detailAddress}}</view>
+    <view class='weather'>晴天</view>
+  </view>
+  <view class='header-search'>
+    <input type='text' placeholder='搜索商家、商品名称'></input>
+  </view>
+</view>
+<swiper indicator-dots='{{indicatorDots}}' autoplay="{{autoPlay}}" duration='duration' class='cagetory-swiper'>
+  <block wx:for="{{swiperImgUrls}}">
+    <swiper-item>
+      <image src='{{item}}'></image>
+    </swiper-item>
+  </block>
+</swiper>
 
-<view>{{address.name}}</view>
+<view class='filter'>
+  <text class='complex-sort'>综合排序</text>
+  <view class='filter-select'>
+    <text class='sales-max'>销量最高</text>
+    <text class='distance-min'>距离最近</text>
+    <text class='filter-title'>筛选</text>
+  </view>
+  
+</view>
+
+<view class='shop-list'>
+  <block wx:for="{{shopList}}">
+    <view class='shop-info'>
+      <view class='shop-img-container'>
+        <image src='https://elm.cangdu.org/img/{{item.image_path}}'></image>
+      </view>
+      <view class='shop-title'>
+        <text class='brand'>品牌</text>
+        <text class='shopping-title'>{{item.name}}</text>
+        <text class='tick' wx:if="{{item.supports[0]}}">{{item.supports[0].icon_name}}</text>
+      </view>
+      <view class='shop-deatil'>
+        <view class='shop-deatil-star'>
+          <Star score="{{item.rating}}"></Star>
+        </view>
+        <text class='number-score'>{{item.rating}}</text>
+        <text class='sale'>月售{{item.recent_order_num}}单</text> 
+      </view>
+      <view class='shop-price'>
+        <text>￥{{item.float_minimum_order_amount}}起送|配送费￥{{item.float_delivery_fee}}</text>
+        <view class='speed'>{{item.distance}}|<text class='sell-time'>{{item.order_lead_time}}</text></view>
+      </view>
+    </view>
+  </block>
+</view>
+

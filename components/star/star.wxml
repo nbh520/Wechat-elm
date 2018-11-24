@@ -1,0 +1,6 @@
+<view class='star'>
+  <block  wx:for="{{starClasses}}">
+    <text class='star-item {{item}}'></text>
+  </block>
+</view>     
+

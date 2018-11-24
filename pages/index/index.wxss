@@ -1,21 +1,146 @@
-/**index.wxss**/
-.userinfo {
+.header{
+  width: 100%;
+  height: 160rpx;
+  background-color: #4294F7;
+}
+.header .address-weather{
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #fff;
+  font-size: 0
+}
+.header .address{
+  width: 80%;
+  height: 100%;
+  float: left;
+  font-size: 17px;
+  text-align: center;
+  font-family: '微软雅黑';
+}
+.header .weather{
+  width: 20%;
+  height: 100%;
+  float: left;
+  font-size: 12px
+}
+.header .header-search{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header .header-search input[type='text']{
+  background-color: #fff;
+  border-radius: 20px;
+  width: 90%;
+  height: 80%;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+}
+.cagetory-swiper{
+  width: 100%;
+  height: 300rpx;
+}
+.cagetory-swiper swiper-item{
+  width: 100%;
+  height: 100%;
+}
+.cagetory-swiper swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+.filter{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.filter .complex-sort{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+.filter .filter-select{
+  float: right;
+  display: inline-block;
+  width: 66%;
+}
+.filter .filter-select text{
+  display: inline-block;
+  color: #333;
+  width: 33.3%;
+  text-align: center;
+  font-size: 14px;
+}
+.shop-info{
+  width: 100%;
+  height: 150rpx;
+  font-size: 15px;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.shop-info>.shop-img-container{
+  width: 150rpx;
+  height: 150rpx;
+}
+.shop-info>view{
+  width: 300px;
+  height:50rpx; 
+  float: left;
+  line-height: 50rpx;
+}
+.shop-info .shop-title .tick{
+  float: right;
+  border: 1px solid #ccc;
+  margin-right: 30px;
+}
+.shop-info .shop-deatil{
+  display: flex;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.shop-info .shop-deatil .number-score{
+  margin-left: 7px;
+  color: #ff9900;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.shop-info .shop-deatil .sale{
+  margin-left: 10px;
 }
-
-.usermotto {
-  margin-top: 200px;
+.brand{
+  border: 1px solid #ffff00;
+  background-color: #ffff00;
+}
+.shopping-title{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.shop-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-img-container image{
+  width: 90%;
+  height: 90%;
+}
+.shop-info .shop-deatil .shop-deatil-star{
+  height: 35rpx;
+  float: left;
+}
+.speed{
+  float: right;
+  margin-right: 25px;
+  font-size: 12px;
+}
+.speed .sell-time{
+  color: #4294F7;
 }
