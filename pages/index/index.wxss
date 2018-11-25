@@ -15,7 +15,9 @@
   height: 100%;
   float: left;
   font-size: 17px;
-  text-align: center;
+  text-align: left;
+  padding-left: 40rpx;
+  box-sizing: border-box;
   font-family: '微软雅黑';
 }
 .header .weather{
@@ -44,15 +46,27 @@
 }
 .cagetory-swiper{
   width: 100%;
-  height: 300rpx;
+  height: 350rpx;
 }
 .cagetory-swiper swiper-item{
   width: 100%;
   height: 100%;
 }
-.cagetory-swiper swiper-item image{
-  width: 100%;
-  height: 100%;
+
+.category-link{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  height: 50%;
+}
+.category-link .category-img{
+  height: 80%;
+}
+.category-link .category-img image{
+  width: 60px;
+  height: 60px;
 }
 .filter{
   width: 100%;
@@ -71,7 +85,7 @@
 }
 .filter .filter-select{
   float: right;
-  display: inline-block;
+  display: block;
   width: 66%;
 }
 .filter .filter-select text{
@@ -85,7 +99,7 @@
   width: 100%;
   height: 150rpx;
   font-size: 15px;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
   border-bottom: 1px solid #ccc;
 }
 .shop-info>.shop-img-container{
@@ -93,7 +107,8 @@
   height: 150rpx;
 }
 .shop-info>view{
-  width: 300px;
+  /* width: 300px; */
+  width: 80%;
   height:50rpx; 
   float: left;
   line-height: 50rpx;
@@ -124,6 +139,9 @@
   font-size: 18px;
 }
 .shop-img-container{
+  width: 20%;
+  padding-right: 10rpx;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;

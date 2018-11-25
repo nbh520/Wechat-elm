@@ -14,7 +14,6 @@ Component({
   },
   attached:function(){
     this.starClass();
-    console.log('启动')
   },
   /**
    * 组件的初始数据
