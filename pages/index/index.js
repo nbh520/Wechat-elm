@@ -13,6 +13,7 @@ Page({
     autoPlay: true, //是否自动切换
     duration: 500, //滑动时长
     shopList: [], //商家列表
+    refresh: false, //下拉刷新
   },
 
   /**
@@ -54,6 +55,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function() {
+    this.setData({
+      refresh: true
+    })
+    setTimeout(() => {
+      this.setData({
+        refresh: false
+      })
+    }, 1000)
     console.log('下拉刷新')
   },
 
