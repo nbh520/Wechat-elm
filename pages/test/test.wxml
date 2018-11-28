@@ -1,17 +1,15 @@
-<view class="page-body">
-  <view class="page-body-wrapper">
-    <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 100vh;"></camera>
-    <view class="btn-area cam">
-      <button type="primary" bindtap="takePhoto">拍照</button>
-    </view>
-    <view class="btn-area">
-      <button type="primary" bindtap="startRecord">开始录像</button>
-    </view>
-    <view class="btn-area">
-      <button type="primary" bindtap="stopRecord">结束录像</button>
-    </view>
-    <view class="preview-tips">预览</view>
-    <image wx:if="{{src}}" mode="widthFix" src="{{src}}"></image>
-    <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
-  </view>
-</view>
+<!--pages/test/test.wxml-->
+
+<button open-type='getUserInfo'>授权</button>
+<view>名称:{{UserInfo.nickName}}</view>
+<view>头像: <image src='{{UserInfo.avatarUrl}}' style='width:50px;height:50px;'></image></view>
+<view>性别: {{UserInfo.gender? '男':'女'}}</view>
+<view>省份：{{UserInfo.province}}</view>
+<view>城市:{{UserInfo.city}}</view>
+
+
+<!-- <button open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>获取手机</button> -->
+
+<button open-type='share'>转发小程序</button>
+<button catchtap='bindShare'>转发信息</button>
+<button catchtap='pay'>支付</button>

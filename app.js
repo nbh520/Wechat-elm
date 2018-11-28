@@ -31,7 +31,6 @@ App({
         }
       }
     })
-    console.log(obj)
   },
   globalData: {
     userInfo: null,
