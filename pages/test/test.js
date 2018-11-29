@@ -142,7 +142,9 @@ Page({
     })
   },
   getPhoneNumber(e) {
-    console.log(e)
+    this.login().then(res => {
+      console.log(res)
+    })
   },
   login() {
     return new Promise((resolve, reject) => {

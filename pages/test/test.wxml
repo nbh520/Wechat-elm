@@ -8,7 +8,7 @@
 <view>城市:{{UserInfo.city}}</view>
 
 
-<!-- <button open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>获取手机</button> -->
+<button open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>获取手机</button>
 
 <button open-type='share'>转发小程序</button>
 <button catchtap='bindShare'>转发信息</button>
