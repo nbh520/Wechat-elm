@@ -1,0 +1,5 @@
+<!--pages/pay/pay.wxml-->
+<view class="container">
+    <input type="text" bindinput="getOrderCode" style="border:1px solid #ccc;"  />
+    <button bindtap="pay">立即支付</button>
+</view>

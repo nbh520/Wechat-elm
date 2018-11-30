@@ -22,7 +22,13 @@ Page({
   onLoad: function(options) {
     this.reqShopCategory();
     this.onReqAddress();
-
+    wx.setStorage({
+      key: 'UserInfo',
+      data: {
+        username: 123,
+        password: 321
+      },
+    })
   },
 
   /**
@@ -36,7 +42,23 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    
+    wx.getStorage({
+      key: 'UserInfo',
+      success: function(res) {
+        res.data.username = 111;
+        console.log(res.data)
+       wx.setStorage({
+         key: 'UserInfo',
+         data: 
+           res.data,
+       })
+
+      },
+    })
+
+    setTimeout(()=>{
+      console.log(wx.getStorageSync('UserInfo'))
+    },1000)
   },
     
 
