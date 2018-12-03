@@ -1,0 +1,4 @@
+<!--pages/getLocation/getLocation.wxml-->
+<button >获取经纬度</button>
+<text>{{latitude}}</text>
+<view>{{longitude}}</view>

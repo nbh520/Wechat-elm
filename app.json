@@ -1,11 +1,13 @@
- {
+{
   "pages": [
     "pages/test/test",
     "pages/index/index",
     "pages/logs/logs",
     "pages/order/order",
     "pages/profile/profile",
-    "pages/food/food"
+    "pages/food/food",
+    "pages/pay/pay",
+    "pages/getLocation/getLocation"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -40,3 +42,4 @@
       }
     ]
   }
+}
